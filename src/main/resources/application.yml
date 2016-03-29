@@ -1,0 +1,19 @@
+---
+server:
+  port: 8083
+  
+eureka:
+  instance:
+    hostname: springmvcthymeleaf
+ 
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+# By Default, application will look for localhost:27071. If you want to change to remote url, use this property to change the mongodb uri     
+#spring:
+#  data:
+#    mongodb:
+#      uri: mongodb://admin:password@ds011459.mlab.com:11459/employeeacn
